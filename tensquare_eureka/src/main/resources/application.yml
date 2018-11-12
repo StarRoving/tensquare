@@ -1,0 +1,8 @@
+server:
+  port: 6868
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false  #是否从Eureka中获取注册信息
+    serverUrl:  #Eureka客户端与Eureka服务端进行交互的地址
+      defaultZone: http://localhost:${server.port}/eureka/

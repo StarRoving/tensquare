@@ -1,0 +1,19 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: tensquare-sms #服务名
+  rabbitmq:
+    host: localhost
+aliyun:
+  sms:
+    accessKeyId: LTAIac4p8qHNx5x2
+    accessKeySecret: XXXXXXXXXXXXXXXXXXXX
+    template_code: SMS_85735065
+    sign_name: 黑马
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka
+  instance:
+    prefer-ip-address: true
